@@ -10,7 +10,14 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
-    <%= yield %>
+
+    <%= render 'shared/navbar' %>
+
+    <main class="Site-content" style="padding-top: 50px;">
+      <%= yield %>
+    </main>
+    <%= render 'shared/footer' %>
+
     <%= javascript_include_tag 'application' %>
   </body>
 </html>

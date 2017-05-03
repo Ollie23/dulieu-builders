@@ -1,0 +1,86 @@
+<div class="navbar-wagon navbar-wagon-fixed">
+  <!-- Logo -->
+  <%= link_to root_path, class: "nav-logo" do %>
+ <%= image_tag "dulieu-builders-logo.png" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= link_to root_path do %>
+      <p class="navbar-wagon-item navbar-wagon-link">Home</p>
+    <% end %>
+
+
+  <div class="dropdown">
+            <p href="#" data-toggle="dropdown" class="navbar-wagon-item dropdown-toggle">Services <b class="caret"></b></p>
+            <ul class="dropdown-menu">
+                <li><a href="#">Kitchens</a></li>
+                <li><a href="#">Bathrooms</a></li>
+                <li><a href="#">Extensions</a></li>
+                <li><a href="#">Conversions</a></li>
+                <li><a href="#">Something else</a></li>
+            </ul>
+        </div>
+
+    <%= link_to root_path do %>
+      <p class="navbar-wagon-item navbar-wagon-link">Portfolio</p>
+    <% end %>
+
+    <%= link_to contacts_path do %>
+      <p class="navbar-wagon-item navbar-wagon-link">Contact Us</p>
+    <% end %>
+
+
+
+
+
+
+
+
+
+    <!-- Search form -->
+    <!-- <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+ -->
+    <!-- Different navigation if login or not -->
+
+
+      <!-- Notification -->
+
+
+      <!-- Profile picture and dropdown -->
+
+
+
+
+      <!-- Login text link -->
+
+
+
+    <!-- Button (call-to-action) -->
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+
+        <li>
+
+              <%= link_to root_path do %>
+                <%= t(".home", default: "Home") %>
+              <% end %>
+              </li>
+              <li>
+
+      </ul>
+    </div>
+  </div>
+</div>
