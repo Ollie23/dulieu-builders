@@ -13,21 +13,17 @@
 
 
   <div class="dropdown">
-            <p href="#" data-toggle="dropdown" class="navbar-wagon-item dropdown-toggle">Services <b class="caret"></b></p>
+            <p href="#" data-toggle="dropdown" class="navbar-wagon-item navbar-wagon-link dropdown-toggle">Services <b class="caret"></b></p>
             <ul class="dropdown-menu">
-                <li><a href="#">Kitchens</a></li>
-                <li><a href="#">Bathrooms</a></li>
-                <li><a href="#">Extensions</a></li>
-                <li><a href="#">Conversions</a></li>
-                <li><a href="#">Something else</a></li>
+                <li><a href="new_builds">New Builds</a></li>
+                <li><a href="kitchens">Kitchens</a></li>
+                <li><a href="bathrooms">Bathrooms</a></li>
+                <li><a href="extensions">Extensions</a></li>
+                <li><a href="externals">External</a></li>
             </ul>
         </div>
 
-    <%= link_to root_path do %>
-      <p class="navbar-wagon-item navbar-wagon-link">Portfolio</p>
-    <% end %>
-
-    <%= link_to contacts_path do %>
+    <%= link_to contact_us_path do %>
       <p class="navbar-wagon-item navbar-wagon-link">Contact Us</p>
     <% end %>
 
@@ -79,6 +75,10 @@
               <% end %>
               </li>
               <li>
+              <%= link_to contact_us_path do %>
+      <%= t(".contact_us", default: "Contact Us") %>
+    <% end %>
+    </li>
 
       </ul>
     </div>
