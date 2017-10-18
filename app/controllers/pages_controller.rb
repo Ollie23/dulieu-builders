@@ -22,4 +22,7 @@ class PagesController < ApplicationController
 
   def all_services
   end
+
+  def gallery
+  end
 end

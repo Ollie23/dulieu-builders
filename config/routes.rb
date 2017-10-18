@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   get '/all_services' => 'pages#all_services'
 
+  get '/gallery' => 'pages#gallery'
 
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
